@@ -16,38 +16,36 @@ console.log (adventurous)
 vacationtype = window.prompt("What kind of trip would you like to go on, musical, tropical, or adventurous?")
 
 if (vacationtype === "musical") {
-  resultv="New Orleans.";
+  destination="New Orleans.";
 }
   
 else if (vacationtype === "tropical"){
-  resultv="a beach vacation in Mexico.";
+  destination="a beach vacation in Mexico.";
 }
 
-else (vacationtype === "adventurous")
-  resultv="go whitewater rafting in the Grand Canyon."
+else if (vacationtype === "adventurous")
+  destination="go whitewater rafting in the Grand Canyon."
 
-
-
+  
 groupsize = window.prompt ("How many are in your group?")
 console.log (groupsize)
 
 if (groupsize <=2) {
-  resultg="go first class to "
+  groupSize="go first class to "
 
 }else if (groupsize >3 && groupsize <6){
-  resultg="take a helicopter to "
+  groupSize="take a helicopter to "
 
 }else if (groupsize >6){
-  resultg="charter a flight to "
-
-}else {
-  resultg="Oops! Try again."
+  groupSize="charter a flight to "
 }
 
-var result;
-result = resultg + resultv;
-console.log("Because you have a group of " + groupsize + " going on a " +vacationtype + " vacation, you're going to " + result);
+var travelsuggestion;
+travelsuggestion = groupSize + destination;
 
+var result;
+result=
+console.log("Because you have a group of " + groupsize + " going on a " +vacationtype + " vacation, you're going to " + travelsuggestion);
 
 
 
